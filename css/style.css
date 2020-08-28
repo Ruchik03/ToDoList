@@ -1,0 +1,143 @@
+/**
+ * Tabs
+ */
+#todoApp{
+	padding: 1rem 2rem 2rem 2rem;
+}
+.tabs {
+	display: flex;
+  flex-wrap: wrap; 
+  font-family: monospace, sans-serif, Arial;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+ /**
+//  * Generic Styling
+// */
+body {
+  background: #bbfdb4;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: monospace, sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", ; 
+  font-weight: 320;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
+
+h1,h2{
+  text-decoration: underline;
+}
+
+#taskContent{
+	background-color: rgb(206, 206, 200);
+	width: 35rem;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#taskContent span{
+	margin:5px 10px;
+}
+
+#addbtn{
+  padding: .8rem .9rem;
+  background-color: black;
+  color:white;
+  font-size: x-large;
+  font-weight: bold;
+  border: 3px white solid;
+  border-radius: 50%;
+  float:right;
+  margin-right:0;
+}
+
+#modal{
+  position:absolute;
+  top:8rem;
+  left:36%;
+  width:23rem;
+  margin:auto;
+  background-color: #90CAF9;
+  text-align: center;
+  font-family: monospace, sans-serif,Arial;
+  width: 25%;
+  font-size: 1.6rem;
+  padding: 2rem 1.2rem 2rem 1.2rem;
+  border-radius: 25px;
+  box-shadow: black 10px 10px 100px;
+}
+
+#modal input{
+  margin-bottom: 1.2rem;
+  width:9rem;
+  height: 1.4rem;
+}
+#addTaskbtn, #cancelbtn{
+  margin:1.2rem 1rem 1rem 1rem;
+  padding:.5rem .5rem;
+  border-radius: 8px;
+}
+.deleteIcon{
+  float:right;
+  display : inline-block;
+  background-color:rgb(206, 206, 200);
+  border:none; 
+}
+
+.deleteIcon img{
+ width: 30px;
+ height:30px;
+
+}
+.buttons:hover{
+  transform: translateY(-3px);
+}
+
+.buttons:active{
+  transform: translateY(3px);
+  
+}
+.buttons:focus{
+  outline:none;
+}
