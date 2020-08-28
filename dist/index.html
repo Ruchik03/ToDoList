@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>To-Do-List</title>
+    <link rel="stylesheet"href="css/style.css">
+  </head>
+
+  <body>
+
+	<header><center><h1>To-Do-List</p></center></header>
+
+	<div id="todoApp">
+		
+		<div class="tabs">
+
+			<input type="radio" name="tabs" id="tabone" checked="checked">
+			<label for="tabone">Home</label>
+
+			<div class="tab" id="home">
+				<center><h2>All Tasks</h2></center>
+				<!-- <div id = "taskContent">
+					<input type="checkbox">
+					<span>This is what you need to do</span>
+					<span>Due: 3/1/4040</span>
+				</div> -->
+					
+					
+			</div>
+		
+
+			<input type="radio" name="tabs" id="tabtwo">
+			<label for="tabtwo">Personal</label>
+
+			<div class="tab" id="personal">
+				<center><h2>Personal Tasks</h2></center>
+				<!-- <div id = "taskContent">
+					<input type="checkbox">
+					<span>This is what you need to do</span>
+					<span>Due: 3/1/4040</span>
+					<button class="deleteIcon"><img src="images/deleteIcon.png"></button>
+				</div> -->
+			</div>
+		
+
+			<input type="radio" name="tabs" id="tabthree">
+			<label for="tabthree">Work</label>
+
+			<div class="tab" id="work">
+				<center><h2>Work Tasks</h2></center>
+
+			</div>
+
+		</div>
+		
+			
+			
+	
+		<div id="modal">
+
+
+			<form class="modalContent" id="myForm">
+					
+				<label for="task">Task:</label>
+				<br>
+				<input type="text" id="task">
+				<br>
+				<label for="duedate">Due Date:</label>
+				<br>
+				<input type="date" id="duedate">
+				<br>
+				<label for="type">Type:</label>
+				<br>
+				<select id="type" name="type">
+					<option value="personal">Personal</option>
+					<option value="work">Work</option>
+				</select>
+				<br>
+				<label for="priority">Priority:</label>
+				<br>
+				<select id="priority" name="priority">
+					<option value="high (red)">High (red)</option>
+					<option value="medium (orange)">Medium (orange)</option>
+					<option value="low (green)">Low (green)</option>
+				</select>
+				<br>
+				<button class="buttons"id="cancelbtn" type="button">Cancel</button>
+				<button class="buttons" id="addTaskbtn"type="button">Add</button>
+			</form>
+
+		</div>
+    </div>
+	<button class="buttons"id="addbtn"type="button"> + </button>
+    <script src="main.js"></script>
+</body>
+
+</html>
