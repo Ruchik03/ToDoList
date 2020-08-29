@@ -1,4 +1,4 @@
-
+alert("This project is not fully complete. I still have to work on it");
 
 import {displayTask, crossOut} from './userInterface';
 import{createTask} from './createTask';
