@@ -11,6 +11,6 @@
 
  NOTE: This project is not fully complete, I still have to work on it.
  
- Link: https://ruchik03.github.io/library/
+ Link: https://ruchik03.github.io/ToDoList/
  
   <img align="center" src = "dist/images/output.png" width = "300" >
