@@ -1,4 +1,4 @@
-# ToDoList
+# To Do List
 
  My ToDoList application lets the user create tasks of two types: Work and Personal.
  All the tasks will be displayed on the home page, and work tasks will be displayed 
@@ -11,6 +11,6 @@
 
  NOTE: This project is not fully complete, I still have to work on it.
  
- # Demo
+ # Output
  
   <img align="center" src = "dist/images/output.png" width = "300" >
